@@ -1,0 +1,99 @@
+i have 5 tables that have the same structure and same columns id name description so i wonder what is the best way to design or to avoid having 5 tables that have the same columns
+create a category table that will include my three common
+columns and another column enum that will differentiate my categories
+ex city country continent etc
+create a category table that will include my three common
+columns and create the other five tables that will just include an
+id
+note that i would have an assocation table that should include the id of cities id countries id continents etc so i can display them into a report
+thank you for your advice
+remove field datatype html from you ajax and use this as action method
+you will need to bind your event to a parent template in this case eg
+and the js
+applying recursion to reorder items in an arraylist
+i am using
+java version 7
+sdk tools revision 24 4 1 october 2015
+taking a screenshot with the tool screenshot2 raise a nullpointerexception on ubuntu server 14 04 and kali linux 2 0 it works on mac os x 10 11
+command
+ screenshot2 -e image png
+ error happens even with the -s argument or without
+error
+is there a fix or does anyone know the reason for this
+i m relatively new to javascript so please bear with me
+i run an instance of the blackboard learn lms feel sorry for me later blackboard displays different modules to end users to show different pieces of information the announcements module contains non-editable code that sends an ajax request to display all system-wide and course-specific announcements for that particular user
+the module brings up a lot of redundant information that i d like to hide since there s no way to edit that particular code i ve been trying to figure out a way to do one of the following
+modify the module s contents with additional scripting from another source on the page
+copy the module s contents to a new editable module and display that one instead
+both methods have proven impossible because the script in the announcements module only runs once the page has loaded entirely so there s no way to run a script afterward or wait until the process has completed
+any ideas on how i might be able to modify the contents without editing its code directly
+hey guys i stuck on my application project because this validation anyone can help me solve this problem i have some textbox value as int and i want to calculate like multiplication or something else into a label text
+the code is showing a value into a textbox by id and the problem is how can i calculate the result of 1 value from textbox like example total price into a label so i want make a validation like this total price 3 into a label
+sorry for my bad english
+i had the same problem my solution was this
+in netbeans the project window right click on the php project properties run configuration
+create a new configuration
+fill the correct values
+run as script
+set php interpreter
+change index file in my case it was cron/index php
+is there a way to have a prefixed id without using triggers currently we are using triggers for this but it has made known to us yesterday that we are moving to cloud that does not allow triggers we are not allowed to do this
+not a good idea this might take out all the information below the product rows plus you may find any products other than the first one missing
+if you just want to hide the totals edit your local xml file by adding this
+this will remove the information from your order emails and leave the info there for invoices etc
+or if using 1 9 then probably best to edit etc/theme xml but i am not sure what you would need to do there
+you can maintain the uniqueness by using a unique filtered index
+here is the documentation on the topic
+so was looking at googles layout principle and it seems like they are big on placing buttons on the seam link below to their documentation
+https //www google com/design/spec/layout/principles html#principles-floating-action-button
+there is also a material floating action button
+https //github com/nobitagit/ng-material-floating-button
+but neither one seems to address how to actually place the button there
+i guess i could hack some css or write a javascript function that would do the same thing but it feels like to me that there should be a method for this to ensure a certain level of consistency might be that i am missing something rather obvious so i thought i would ask
+i think you should insert the values in the definition of the matrix using the rep function like this
+the option byrow tells r to fill the matrix by row and not by column
+depending on how you want to initialize your variables you can do this
+otherwise there is not better way to do it then you are right now
+linq works only with ienumerable lt t gt interface windowcollection impliments only ienumerable there two options
+cast lt t gt - this return ienumerable but if collection has element which can t be casted to t exception will thrown
+oftype lt t gt - this returns ienumerable it skips element which can t be casted to t that is why i prefer oftype
+application current windows oftype lt window gt any
+i m trying to limit the size of image uploads by changing their resolution but even if i don t change the resolution on a jpeg for instance the resulting image is over twice the size of the original despite being the same dpi depth and resolution
+i m using the graphics fromimage bitmap method and then attempting to compress the image using the approach prescribed by microsoft help docs i m not sure if it s because i m on windows server 2012 but the list of decoders returned by imagecodecinfo getimagedecoders does not contain a jpeg decoder
+not sure if it should make a difference that i m on windows server 2012 but i would think this would be something that s available by default
+i can t seem to find much documentation on this so i m hoping someone out there can provide some guidance or point me in the direction of an open source alternative i could use here i know photoshop can do an amazing job at turning high res images into excellent quality images that are way way smaller than the original there has to be some half decent library out there any help would be greatly appreciated
+dealing is problematic in several ways
+firstly you are calling srand every time you want a random number the way rand works is that it starts off with a seed number and performs a complicated piece of arithmetic on it each time it has to produce a new random number for this reason the sequence isn t really random that s why they are called pseudo random number generators prngs
+you are reseeding the sequence with the current time in seconds every time you ask for a random number now assuming your function deals the cards in a tight function with no artificial delays is it not likely that you will always be reseeding the prng with the same time as pmg says call srand only once per run of your program
+secondly and i am assuming this is a typo you forgot to generate a new random number before selecting the second card this is pmg s other answer actually as you have already shuffled the pack why not just select the first two cards from the deck
+you don t say what platform you are using but on some like os x srand/rand is a very poor random number generator you should use srandom/random if you have got it even better you should be using arc4random_uniform if your platform has got it this is because rand 52 introduces a bias because 52 is not a power of 2 some numbers are more likely to come up than others
+finally your shuffle looks fine to me but it might be biased i would use the fisher yates shuffle which is known to be unbiased
+try using display inline-block on creator_name
+there is no need to mix mgwt layout model based on flex-box model and gwt layout panels as you lose all the benefits of flex-box model
+make your pager a flexpanel
+that s it - you get your layout with no tables percentages etc and it s very fluid - it will work on all screens
+nb instead of using a verticalpanel for your center region you should use another flexpanel - it will take all available space also you don t not need to extend the composite - extend a flexpanel or rootflexpanel instead
+just try command stty sane in shell
+it always help me
+your current code push - in other word add - another reference to dothejob function each time a key is pressed but the point is you don t have to check for keypress - that s what angular already does for you when tracking the model
+instead you can just alter parsers right in your link function
+what you shouldn t forget to do is changing your replacer as well
+ so that it does a replacement globally and not just once here s the demo
+yes i finally got it running the problem is that my dll tried to write to the exe folder during dll initialization windows seems to detect this and the loadlibrary call fails
+try it
+i am creating a single page application a little framework for myself
+i am using native javascript no external dependencies no jquery nothing
+here s what i d like to do
+after first visiting the page my framework synchronously loads only resources needed to render the current page afterwards when everything s loaded for the current page i create new webworker i want him to load other js files representing other pages on the site each of those files conatin exactly one object which represents the page - i want this object to be globally available in the main thread in my head webworker should start loading dependencies one-by-one via ajax calls and everytime he loads something he should inform main thread via postmessage and send the file to main thread not sure wheter send whole ajax responsetext back to the main thread or write it to sessionstorage - i would appretiate recommendations even on this topic
+but here s a problem
+i need to execute this file - i want my objects to be globally availabe to my main-thread i know i can t do something like this
+because i can t access the dom from the webworker thread
+so the question is
+is there a better solution then send responsetext string back to the main thread and then call eval on it i heard that eval is evil slow and buggy
+but do i have other choice
+every recommendation even the ones that would tear my framework concept apart is much appretiated
+here s my github profile but dont inspect it too much it s nowhere near finished and there might be a pretty stupid mistakes and documentation is written in my native languague
+https //github com/congrady/bakalarka
+you can refer the following code to see how nsnumber can be converted into nsstring
+its better to avoid complicated codes for simple stuffs
+i m trying to run a capybara/phantomjs test in openshift using a ruby 1 9 3 app not rails or web it works well locally but when i try bundle exec ruby test rb it outputs

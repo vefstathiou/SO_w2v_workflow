@@ -1,0 +1,99 @@
+it has a protected interface that serves derived classes
+2 should you always go to the trouble of creating two different interfaces for each class
+3 answer no not necessarily
+sometimes it s worth the extra effort to create protected getter and setter methods and make all data private
+other times - he says - it s good enough to make the data itself protected without doing all the extra work of writing a bunch of extra code and incurring the consequent size and performance penalties
+sounds reasonable to me do what you need to do - but don t go overboard and do a bunch of unnecessary stuff in the name of theory
+that s all he s saying - use good judgement and don t go overboard
+you can t argue with that
+ps
+faq s 19 5 through 19 9 in your link deal with derived classes none of this discussion is relevant outside of the question how should i structure base classes for inheritance in other words it s not a discussion about classes in general - only about how should a super class best make things visible to it s subclasses
+when i used im2frame for converting image sequence to video
+i am getting this message
+ error using im2frame
+ indexed movie frame must have a non-empty colormap
+error in program at 141
+ frm im2frame im map
+if someone can explain what i should do i will be grateful
+thanks
+i ve written a simple guess the number program and i need to know if there is any kind of recursion involved in it and what kind it is primitive/tail i m new to this so please bear with me
+ using static_cast is fine at the example but reinterpret_cast is not because reinterpret_cast is not convert vtable
+no the problem is that the reinterpret_cast is completely oblivious about the inheritance it will simply return the same address unchanged1 but static_cast knows that you re performing a downcast i e casting from a base class to a derived class since it knows both types involved it adjusts the address accordingly i e does the right thing
+let s pretend our implementation lays out the hypothetical overlappedex class that has a virtual function like this
+the pointer we re given points to the overlapped subobject reinterpret_cast would not change that it would only change the type obviously accessing the overlappedex class through this address would easily wreak havoc because the locations of its subobjects are all wrong now
+static_cast knows that to convert a overlapped to overlappedex it must adjust the address and does the right thing
+ though if i use c-style cast at there not reinterpret_cast could it also go wrong
+a c-style cast is defined as the first one of the following that succeeds
+const_cast
+static_cast
+static_cast then const_cast
+reinterpret_cast
+reinterpret_cast then const_cast
+as you can see a static_cast is tried before reinterpret_cast so in this case a c-style cast would also do the right thing
+more info
+1not guaranteed there are very little guarantees about what happens on a reinterpret_cast all implementations i know of will simply give out the same address unchanged
+depending on the case not on post requests with csrf protection in form for example migrate can be used as well
+according to the docs migrates the current session to a new session id while maintaining all session attributes
+i am currently making a pair of dropdown menus the options of the second one dependent on the choice of the user on the first dropdown
+currently my code doesn t work and does not go into the if else function
+the basicservicefee allows for 10 free connections at 80
+anytime the connections are 10 each addition connection is 4 plus the basic
+how can i add the 4 charge and keep adding it when each number from the connectionslistbox is selected
+my code adds the first 4 charge and then stops after 11 on the connectionslistbox how do i get 12 to be another 4 and 13 to be another 4
+here is my code
+i m working on a php program the user need to select skills one or more from a drop-down list
+then i will save the result in array
+user_skills
+then each project has a list of required skills too i ll save it in another array proj_skills
+the question is
+what is the best way to save these info into the database
+should i create 2 new tables one for the projects skills and user skills columns proj_id and skill
+each skill in a row
+and what is the best way to compare project with users skills and find match skills
+select id from user_skills where skill proj_skill i and id in select id from user_skills where skill proj_skill i+1 nested select/loop or recursion
+how to do it whats the best and optimized way to do it
+hope it s clear thanks in advance
+i m trying to figure out how to store a hash in my access database now i have generated a hash by salting a user password with the user id not highly secure i know but plenty for my purposes i have also stored the hashed values in the database as base64 strings manually i haven t yet developed the module to do that automatically however when i go to retrieve the hash from the database i receive the hex code in place of the string i know that the string is stored in the database since i stored it there manually so i m not quite sure what s going on
+this is the code for the login button
+and this is the code for the hash calculator
+but when i run this instead of returning a value like rlzhyoio4+vpdjdsrfq5sj9vbj+ffyhig9v5+z+jeni which i stored in the database it returns a value like 5c6bed0d94b9be8afbc5c8cac1e9d4be03f556917c2611ec56f4e6f341ef60d9 now how do i get around this am i storing the values incorrectly should i store them as a byte array if so how do i do that or am i retrieving the values incorrectly or are those ok and should i be converting the value once i get it back from the database
+i m very new to this whole encryption lark and even authentication so if i m doing something stupid do tell me
+thanks in advance
+edit i m using the text data type in access
+edit 2 sorry i understand the confusion now i m storing only the hash not the plaintext password so it s vital the hash received from the database is in the same format as that from the user id and password
+edit 3 ok thanks guys i ve solved it i needed to convert it to a hex string using the soaphexbinary function
+please let me understand the following code
+case getname will generate
+case getvalue will generate
+questions
+please clarify difference between case 1 2 3 and 4 especially case 2 and 3
+can i always use any of them in all situations ie treat them always the same when adding object if no when should i use them differently
+i know case getname but why case getvalue can still have names though i did not add like add form1 form1 and the returned is short of the first character
+this is reproduced from delphi 7
+thanks so much for your help
+i wanna get viewstate value from webpage that i use this site was wrote in asp net this value is change more quickly and i want to get this when i connect to site and use it in my python program
+any ideas
+please give me an example
+thanks
+there are several tools that can be integrated with svn
+check out this question
+https //stackoverflow com/questions/187064/graphical-diff-for-mac-os-x
+you don t have any migrations for it
+you don t have migrations and you don t inherit from activerecord base as that is the database orm component
+if you use a generator to create the model use --skip-migration to avoid generating the database migration file
+you can still get validations and conversions though e g
+if you want some setup data i e constants given there is no db you can just define them here constants start with uppercase
+change your input type to button
+create a function and call it onclick of the button
+and then create a function
+i am using the wookmark plugin and have gotten it to work as they show on their website in my use case when i hover over a particular element it expands vertically this obviously messes up the absolute positioning of the elements below the expanded element in that column i am trying to modify/augment the wookmark plugin to handle my use case and was wondering whether anyone had some tips on how i can approach this problem
+thanks
+you can convert the text file to byte and store it in column of image datatype when you retrieve this data from data base you will need to type cast to byte and using filestream you can convert it into the file
+following are some helpful links
+http //www aspdotnet-suresh com/2011/01/how-to-insert-images-into-database-and html
+http //social msdn microsoft com/forums/en/netfxbcl/thread/42cec0cb-5761-4aaa-93dc-861b29ee5ea6
+hope this is what you are looking for
+tail recursion is when you do nothing after the function calls itself
+this is generally done by returning with the next recursion call
+so yours is a tail recursion in a way since you do nothing after your checkguess is called recursively
+in general you want to use some sort of sequence operation like dnolen s answer however if you need to do something that is not expressible in some combination of sequence functions using the loop macro works as well for this precise problem dnolen s answer is better than anything using loop but for illustrative purposes here is how you would write it with loop

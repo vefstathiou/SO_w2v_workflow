@@ -1,0 +1,98 @@
+9 don t use strings that contain property names once you refactor your code and properties change their names to will have a stressful time finding all property names in strings and fixing them use lambda expressions instead
+i wish you the best to solve your problem and i hope that i could help you a little bit
+best regards
+oliver hanappi
+a content delivery network will be anything but inexpensive you will need a server in europe with good connectivity all around my take would be a uk vps with 478east but i m biased since i m with them right now
+silverlight is a technology not a content delivery network akamai will run you out of house and home unless you re planning to deliver 10tb per month and can jump into a one year contract
+you haven t mentioned if you will deliver static or streaming content as that counts since you might have a harder time using a vps/server in europe as you will need to setup a lot more stuff for streaming as opposed to static/progressive streaming
+ok i ve managed the issue i needed to upload my public key in bitbucket s profile and put public key in authorized_keys file at my server after that authorization is passwordless using keys and netbeans pulls/pushes ok
+is there a way to make a global exception-handler in java i want to use like this
+the handler may not catch exceptions thrown in a try-catch body
+martijn
+i figured it out for some reason netbeans debugger tells me _post data is null but it s not to manually determine the size of the _post received i used these calls
+also i was putting _post data into codeigniter s session
+which was coming up empty leading me to further believe that _post was empty but the problem was instead this- gt session which apparently has a 4k size limit according to this post
+hi i have problem with a class i want to pass in an intent by putting it into the putextras
+its serializable and the code looks like this
+the problem is that y now is an arraylist and no longer an objectb so i cant cast it
+if i change the code to
+it works fine
+how on earth can you control the volume of the sound played using sndplayasync on windows mobile 6
+it seems like no one knows the documentation doesn t mention anything regarding it
+so either there s no way or it is kept top secret
+in addition i am aware of the possibility of using the windows media player but i rather not if possible
+thanks for any help
+aviv
+in monotouch we ran into this problem with the movie player sample in that it would only play the video once but would not play it a second time
+i am asking this question to post an answer since it has been hitting various folks
+an extension method is essentially a static method so all you have access to are the public members of the instance on which the extension method is invoked on
+my boss would like to find a way for a running executable to ask oracle the size of the resources that the program is used the purpose behind this is so that we can add to the
+user documentation/capacity planning documentation information on the size of the resources needed for each program
+my google-fu is weak today and i really haven t been able to find anything in the docs or online that point toward an api that would help me accomplish this
+does anyone have any experiences they can share or suggest leads for me to follow
+all on topic answers get +1 as a thank you
+evil
+use thread setdefaultuncaughtexceptionhandler see rod hilton s global exception handling blog post for an example
+just for completeness since some folks may visit this page thinking they will get an answer for the save as feature of emacs that s c-x c-w for an open file
+mpmovieplayercontroller is a singleton underneath the hood if you have not properly release d objc or dispose d monotouch and you create a second instance it will either not play or play audio only
+additionally if you subscribe to mpmovieplayerscalingmodedidchangenotification or mpmovieplayerplaybackdidfinishnotification or mpmovieplayercontentpreloaddidfinishnotification be warned that the posted nsnotification takes a reference to the mpmovieplayercontroller as well so if you keep it around you will have a reference the player
+although mono s garbage collector will eventually kick-in this is a case where deterministic termination is wanted you want the reference gone now not gone when the gc decides to perform a collection
+this is why you want to call the dispose method on the controller and the dispose method on the notification
+for example
+if you were listening to notifications call dispose in your notification handler at the end to release the reference that it keeps to your mpmovieplayercontroller for example
+html generation is usually done with one of the infinite amounts of html templating languages available for python personally i like templess but genshi is probably the most popular there are infinite amounts of them there is a list which is highly likely to be incomplete
+otherwise you might want to use lxml where you can generate it in a more programmatically xml-ish way although i have a hard time seeing the benefit
+it s difficult to answer a question in such broad terms but here are some of my thoughts
+using f# to build the parser sounds good
+fsparsec is a great library i m kinda partial towards fslex and fsyacc either way in f# there are libraries specifically designed for parsing which save you time
+generating code with the dlr sounds ok
+the dlr is a great platform for dynamic code generation however your application is much more specific if you are limiting yourself to just computing values you should use the expression trees apis from net 3 5 this api is designed for representing arbitrary code expressions the dlr on the other hand is designed as a runtime or dynamic languages i m not saying it s impossible just that it isn t the right tool for the job
+don t compile your generated code
+if you do go with the dlr to represent your ast the cost of compiling and executing will likely be far greater than simply interpreting the tree do compile the code if a you are executing the same function / method many times or b the function / method is very complicated
+c# + dlr ironpython f# or some combination of the three are all sound choices ultimately the correct choice is the one that gets the job done in as quick of a time as possible
+you can set the default uncaughtexceptionhandler which will be used whenever a exception propegates uncaught throughout the system
+the leading 0 in an integer means it s in octal notation meme is a peculiar one which originated in c and spread all over the place -- python 1 and 2 perl ruby java python 3 has eliminated it by making a leading 0 illegal in all integers except in the constructs 0x 0b 0o to indicate hex binary and octal notations
+nevertheless even in a hypothetical sensible language where a leading 0 in an int had its normal arithmetical meaning that is no meaning whatsoever you still would not obtain your desired result 011 would then be exactly identical to 11 so calling str on either of them would have to produce identical results -- a string of length two 11
+in arithmetic the integer denoted by decimal notation 011 is identical exactly the same entity as indistinguishable from one and the same with the integer denoted by decimal notation 11 no hypothetical sensible language would completely alter the rules of arithmetic as would be needed to allow you to obtain the result you appear to desire
+so like everybody else said just use a string directly -- why not after all
+please review my code for every my entity i ve created a service class where i put all the access methods for this entity this method are doing the transformation from the entities to my dto classes this methods are called from the web layer or a bussines method am i doing this righth or should i do it differently
+the service method
+and the dto class
+it is very frequent for web containers to provide a connectionfactory or similar using jndi which uses a pool of connections but the way to configure it is not standardized
+please see http //docs codehaus org/display/jetty/datasource+examples for how it is done with jetty
+use recaptcha or asirra to avoid automatic submission that should stop the bots and script kiddies
+to stop hordes of humans from submitting spam via mechanical turk or anything like that log each attempt in memcached and as soon as you reach a maximum submissions from the same ip in a given period of time block that ip for a few minutes or hours days whatever
+keep in mind the query wont actually hit the database until you actually use the ienumerable you are are returning because of deferred execution i m not sure how that will work since you are disposing the financeentities before you actually execute the query assuming that works it looks fine to me
+if you want programmatic generation rather than templating karrigell s htmltags module is one possibility it can include e g the class attribute which would be a reserved word in python by the trick of uppercasing its initial i e quoting the doc url i just gave
+ attributes with the same name as
+ python keywords class type must be
+ capitalized
+you can run identify -verbose from the imagemagick suite on the image look for compression group4 in the output
+because you re passing nil as the didendselector you need to pass a selector there
+the using maven-eclipse-plugin in multi-module projects with wtp of the maven website describes how to develop multi-module projects with maven and eclipse efficiently using the best of both maven 2 and eclipse s wtp this covers projects that have ejb and ear modules
+an fully working example of a multi-module projects containing some jar- a war- and an ear-project is even available for download if necessary
+my goal is to generate the aspx code of a page in the form of string i am calling the below codebehind code through asynchronous request in javascript and i am getting the response back through response write
+i want to ask that is the above code is memory efficient i am thinking of yield to use as it evaluates lazily can u suggest on memory efficency of above code
+say i want my xml to include any number of container tags which every one of those to include yet again any number of container tags and so on how would the xsd look like
+p s
+i want this xsd to be compiled to classes
+thank you very much
+can be done quite easy
+you need to use the mixer api functions to set the master volume here is a code sample
+http //www csharp-home com/index/tiki-read_article php articleid 134
+to use this code in your windows mobile application you need to change winmm dll to coredll dll also these methods may not be supported in windows mobile but i m pretty sure they are
+i spent several hours trying to load subclassed uinavigationcontroller from another nib while taping a tabbaritem does anyone have any idea how to do it correctly
+the latest test
+mainwindow xib - uitabbarcontroller with 4 tabs one is named news and is set to navigation controller while news tab is selected - class identity newsnavigationcontroller nib name newsview
+view loaded from newsview appeared in the window
+running this variant leads to
+ loading 123209 stack frames 16 and counting removing class
+ identity ends with crash terminating app due to uncaught
+ exception nsunknownkeyexception reason setvalue forundefinedkey this class is not key value
+ coding-compliant for the key newstableviewcontroller
+it s clear that class indentity is the way to go but why does it not work for me
+db2 has great xml integration - but you pay for it this is what we use where i work you will have to should anyway be running the latest php if you re going to use pdo to interface to it
+i assume you re looking for a database that can natively handle xml from my understanding hearsay oracle and ms-sql also handle xml but they are not as polished
+in the open source world i dont know what to recommend for tight xml integration
+-cf
+try the apache commons httpclient library instead of trying to roll your own
